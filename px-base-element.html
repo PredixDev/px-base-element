@@ -1,0 +1,39 @@
+<link rel="import" href="behavior.html">
+
+<!--
+## Usage
+To use this component in your custom component do the following:
+```
+<dom-module id="example-module">
+  <template>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'example-module',
+      behaviors: [pxMobile.behaviors.BaseElement]
+    });
+  </script>
+</dom-module>
+```
+@element pxm-base-element
+@demo demo.html
+@homepage index.html
+-->
+<dom-module id="px-base-element">
+  <template>
+    <content></content>
+  </template>
+</dom-module>
+<script type="text/javascript">
+  Polymer({
+    is: 'px-base-element',
+    behaviors: [px.BaseElement],
+    properties: {
+      title: {
+        type: String
+      }
+    }
+  });
+
+</script>
