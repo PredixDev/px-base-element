@@ -1,0 +1,36 @@
+<script src="../px-mobile.js/dist/px-mobile.js"></script>
+<script>
+	pxMobile.behaviors = pxMobile.behaviors || {};
+	/** @polymerBehavior */
+	pxMobile.behaviors.BaseElement = {
+		properties: {
+			var: {
+				type: Object
+			}
+		},
+		created: function () {
+			var logger = new pxMobile.Logger(this.localName);
+			pxMobile.utils.extend(this, logger);
+			this.logger = logger;
+			//	logger.logApi(this.id, 'created');
+		},
+
+		_created: function () {
+			var logger = new pxMobile.Logger(this.id || '', {});
+			logger.logApi(this.localName, 'created');
+			var behavior = new pxMobile.behaviors.Base(this.id, {});
+			this.logger = logger;
+			pxMobile.utils.extend(this, behavior);
+			console.warn('BaseElement.created', this);
+			console.dir(this);
+			logger.logApi(this.id, 'ready', this.id);
+		},
+		emit: function (event, data) {
+			return pxMobile.PubSub.emit(this.localName + ':' + event, data);
+		},
+		on: function (event, cb) {
+			return pxMobile.PubSub.on(event, cb);
+		}
+	};
+
+</script>
