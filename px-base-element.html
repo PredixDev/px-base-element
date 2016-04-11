@@ -1,5 +1,5 @@
+<link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="behavior.html">
-
 <!--
 ## Usage
 To use this component in your custom component do the following:
@@ -11,29 +11,28 @@ To use this component in your custom component do the following:
   <script>
     Polymer({
       is: 'example-module',
-      behaviors: [pxMobile.behaviors.BaseElement]
+      behaviors: [BaseElement]
     });
   </script>
 </dom-module>
 ```
-@element pxm-base-element
+@element px-base-element
 @demo demo.html
 @homepage index.html
 -->
 <dom-module id="px-base-element">
-  <template>
-    <content></content>
-  </template>
+	<template>
+		<content></content>
+	</template>
 </dom-module>
 <script type="text/javascript">
-  Polymer({
-    is: 'px-base-element',
-    behaviors: [px.BaseElement],
-    properties: {
-      title: {
-        type: String
-      }
-    }
-  });
-
+	Polymer({
+		is: 'px-base-element',
+		behaviors: [BaseElement],
+		properties: {
+			title: {
+				type: String
+			}
+		}
+	});
 </script>
