@@ -1,24 +1,35 @@
+<!doctype html>
+
 <html>
-<head>
-  <title>pxm-base-element demo</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>px-base-element Demo</title>
+        <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
+        <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+        <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
+        <link rel="import" href="px-base-element.html"/>
+        <link rel="import" href="../px-theme/px-theme.html"/>
+    </head>
 
-  <!-- TODO: dependencies -->
-  <script src="../../../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <link rel="import" href="../../../bower_components/polymer/polymer.html">
+    <body>
 
+        <h3>Demo</h3>
 
-  <!-- TODO: pxm components -->
-  <link rel="import" href="../../../px-mobile.html">
-  <link rel="import" href="../../../px-mobile-theme.html">
-  <!--link rel="import" href="component.html"-->
-</head>
-<body>
+        <p>
+            Although related, examples are /not/ the same as the test fixtures.
+            Tests are tests, examples are examples.
+        </p>
 
-<!-- TODO: px-view docs -->
-<h2>pxm-base-element</h2>
+        <p>
+            Also see the <a href="index.html">documentation</a> and the <a href="test/fixture.html">UI test fixture</a>.
+        </p>
 
-<pxm-base-element id="test"></pxm-base-element>
+        <p>
+            Click on the counter to make it increment:
+        </p>
 
-
-</body>
+        <!-- instance 1, "predix" theme -->
+        <px-base-element counter-value="1">&hearts;</px-base-element>
+    </body>
 </html>
