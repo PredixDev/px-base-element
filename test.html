@@ -2,17 +2,17 @@
 <html class="pxm">
 <head>
   <meta charset="UTF-8">
-  <script src="../../../../webcomponentsjs/webcomponents-lite.js"></script>
-  <script src="../../../..//web-component-tester/browser.js"></script>
-  <link rel="import" href="../../../../polymer/polymer.html">
-  <link rel="import" href="../../../dist/px-mobile.min.html">
+  <script src="/webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="/web-component-tester/browser.js"></script>
+  <link rel="import" href="px-base-element.html">
+
 </head>
 <body>
 
-	<pxm-base-element id="fixture" title="Test Element"></pxm-base-element>
+	<px-base-element id="fixture" title="Test Element"></px-base-element>
 
 	  <script>
-	    suite('<pxm-base-element>', function() {
+	    suite('<px-base-element>', function() {
 	      var element = document.getElementById('fixture');
 	      test('renders', function() {
 	        assert.ok(element);
