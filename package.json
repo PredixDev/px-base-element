@@ -9,7 +9,6 @@
 	"license": "ISC",
 	"author": "Jonnie Spratley",
 	"scripts": {
-		"postinstall": "bower install",
 		"start": "grunt",
 		"test": "grunt test",
 		"watch": "grunt watch"
