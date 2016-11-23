@@ -1,33 +1,33 @@
 {
-	"name": "px-base-element",
-	"version": "0.0.1",
-	"authors": [
-		"Jonnie Spratley <jonnie.spratley@ge.com>"
-	],
-	"description": "A base element that contains comment methods.",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/PredixDev/px-base-element.git"
-	},
-	"main": "px-base-element.html",
-	"keywords": [
-		"px",
-		"web-component"
-	],
-	"license": "MIT",
-	"ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"test",
-		"tests"
-	],
-	"dependencies": {
-		"polymer": "~1.4.0",
-		"webcomponentsjs": "~0.7.21",
-		"fetch": "~0.11.0"
-	},
-	"devDependencies": {
-		"iron-component-page": "PolymerElements/iron-component-page#~1.0.5"
-	}
+    "name": "px-base-element",
+    "version": "0.0.2",
+    "authors": [
+        "Jonnie Spratley <jonnie.spratley@ge.com>"
+    ],
+    "description": "A base element that contains comment methods.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PredixDev/px-base-element.git"
+    },
+    "main": "px-base-element.html",
+    "keywords": [
+        "px",
+        "web-component"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "polymer": "~1.4.0",
+        "webcomponentsjs": "~0.7.21",
+        "fetch": "~0.11.0"
+    },
+    "devDependencies": {
+        "iron-component-page": "PolymerElements/iron-component-page#~1.0.5"
+    }
 }
