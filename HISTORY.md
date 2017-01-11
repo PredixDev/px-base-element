@@ -1,3 +1,7 @@
+v0.0.4
+==================
+* changing ghp.sh to account for Alpha releases
+
 v0.0.3
 ==================
 * changing all devDeps to ^

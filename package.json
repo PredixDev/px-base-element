@@ -1,6 +1,6 @@
 {
     "name": "px-base-element",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A px base element web component",
     "keywords": [
         "px",
